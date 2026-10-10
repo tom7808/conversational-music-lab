@@ -1,19 +1,19 @@
 # SIWC利用申請の準備下書き
 
 作成・公式窓口確認日：2026年10月10日  
-状態：申請対象の提供形態は本人承認済み。本文は送信前レビュー用の下書き。フォームへの入力・送信、クライアント登録、承認取得は未実施。
+状態：企画文書の公開段階で、アプリは未実装。申請対象の提供形態と、このInterest formへ個人案件の受付可否を含めて相談する方針は本人承認済み。本文は送信前レビュー用の下書き。フォームへの入力・送信、クライアント登録、承認取得は未実施。
 
 ## 申請の目的と現在の段階
 
 「会話で音楽を学ぶ実験室」は、初心者がブラウザでリズムを聴き比べ、自分で編集し、AIとの対話で変化を理解する音楽学習Webアプリの企画である。本プロジェクトは収益化を行わない。実際のSIWCと、利用者が許可した本人のChatGPTプランによる推論を使い、利用者ごとの認証情報・ログイン状態・会話・リズムパターンを分離することを目標とする。
 
-現在は非公開の企画段階で、実装、実認証・実推論試験は未開始である。開発場所はCodexクラウド。初回認証試験はmacOSの同一PC上のブラウザ＋ローカルバックエンドに計画上選定済みだが、実行準備も未実施である。申請対象は、複数の利用者がそれぞれのChatGPTアカウントで使うホスト型Webアプリに決定済みである。ローカル環境は本番提供形態ではなく、事前検証用に限る。本番の具体的なホスト先は未決定であり、ホスト型での適用条件と必要な承認は未確認である。
+現在は企画文書の公開段階で、実装、実認証・実推論試験は未開始である。開発場所はCodexクラウド。初回認証試験はmacOSの同一PC上のブラウザ＋ローカルバックエンドに計画上選定済みだが、実行準備も未実施である。申請対象は、複数の利用者がそれぞれのChatGPTアカウントで使うホスト型Webアプリに決定済みである。ローカル環境は本番提供形態ではなく、事前検証用に限る。本番の具体的なホスト先は未決定であり、ホスト型での適用条件と必要な承認は未確認である。
 
-自作部分はMITライセンスで、将来OSS公開を予定する。第三者コード・素材は元の条件に従い、SIWC DevKitを採用する場合の独自ライセンスは別に確認する。DevKitは未導入であり、自作部分のMITや非収益化の方針をSIWCサービス利用許可と扱わない。
+企画文書を公開する段階であり、将来実装する自作コードはMITライセンスでOSS公開を予定する。第三者コード・素材は元の条件に従い、SIWC DevKitを採用する場合の独自ライセンスは別に確認する。DevKitは未導入であり、自作部分のMITや非収益化の方針をSIWCサービス利用許可と扱わない。
 
 ## 公式窓口と表示項目
 
-[ChatGPTプラン利用の概要](https://developers.openai.com/siwc/token-sharing-open-source)は、遠隔ホスト型または有料のアプリについて[Interest form](https://openai.com/form/sign-in-with-chatgpt-interest/)を案内している。[client ID申請案内](https://developers.openai.com/siwc/request-client-id)とフォーム本文は選定された商用パートナー向けの案内であり、個人の非収益化案件の受付方法は未確認である。このフォームを正式な受付先と決める前に、その点を確認する。
+[ChatGPTプラン利用の概要](https://developers.openai.com/siwc/token-sharing-open-source)は、遠隔ホスト型または有料のアプリについて[Interest form](https://openai.com/form/sign-in-with-chatgpt-interest/)を案内している。[client ID申請案内](https://developers.openai.com/siwc/request-client-id)とフォーム本文は選定された商用パートナー向けの案内であり、個人の非収益化案件の受付方法は未確認である。このInterest formに、個人の非収益化案件の受付可否を含めて相談する予定である。フォームへの入力・送信は未実施であり、受付可否も未確認である。
 
 以下は閲覧時の必須表示を整理したもの。送信時の検証規則や追加要求を保証しない。本人情報の実値は本書へ保存せず、正式な窓口と記入方法を確認後、本人が送信先へ直接記入する。
 
@@ -28,27 +28,27 @@
 | 希望機能 | あり | サインイン＋ChatGPTプランによるAIリクエストを希望 |
 | 対象製品の簡潔な説明 | あり | 下記の日英説明をレビューして使用 |
 
-表示本文からは、完成アプリ、デモ、公開GitHubリポジトリが必須かは確認できない。不要とも判断しない。非公開リポジトリを公開URLの代わりに提出すると決めず、URLの要件と企画段階の受付可否を確認する。会社・業務用メールを架空の情報で補わない。[公式フォーム](https://openai.com/form/sign-in-with-chatgpt-interest/)
+表示本文からは、完成アプリ、デモ、公開GitHubリポジトリが必須かは確認できない。不要とも判断しない。企画文書の公開段階であることとアプリ未実装を明記し、URLの要件と企画段階の受付可否をこのフォームで相談する。会社・業務用メールを架空の情報で補わない。[公式フォーム](https://openai.com/form/sign-in-with-chatgpt-interest/)
 
 ## 製品説明の日本語下書き
 
 会話で音楽を学ぶ実験室は、初心者がブラウザでリズムを聴き比べ、グリッド上で音の位置を編集し、AIに「なぜ違って聴こえるか」を質問する、個人運営の非収益化ホスト型Webアプリの企画です。音の再生はブラウザ側で行い、AIとの対話にはリズムの構造化データとテキストを使う初期案を検討しています。
 
-実際のSign in with ChatGPTを通じて、利用者が許可した本人のChatGPTプランでAIリクエストを実行することを希望します。利用者ごとの認証情報、ログイン状態、会話、リズムパターンを分離する設計と実動作検証を目指します。現在は非公開の企画段階で、実装・実認証・実推論試験は未開始です。申請対象は、複数の利用者がそれぞれのChatGPTアカウントで使うホスト型Webアプリです。macOS上のローカル構成は事前検証用に限り、本番の具体的なホスト先は未決定です。このホスト型提供の適用条件、必要な承認、登録方式、運営者による利用者ごとの資格情報の保管・更新について確認したいと考えています。ホスト型での利用承認はまだ取得していません。
+実際のSign in with ChatGPTを通じて、利用者が許可した本人のChatGPTプランでAIリクエストを実行することを希望します。利用者ごとの認証情報、ログイン状態、会話、リズムパターンを分離する設計と実動作検証を目指します。現在は企画文書の公開段階で、実装・実認証・実推論試験は未開始です。申請対象は、複数の利用者がそれぞれのChatGPTアカウントで使うホスト型Webアプリです。macOS上のローカル構成は事前検証用に限り、本番の具体的なホスト先は未決定です。このホスト型提供の適用条件、必要な承認、登録方式、運営者による利用者ごとの資格情報の保管・更新について確認したいと考えています。ホスト型での利用承認はまだ取得していません。
 
-自作部分はMITライセンスで将来OSS公開を予定しています。SIWC DevKitの採用・ライセンス適合性とSIWCサービス利用許可は別に確認します。個人の非収益化案件の適切な申請窓口、企画段階での受付可否、必要なURL・資料をご案内ください。
+企画文書を公開する段階であり、将来実装する自作コードはMITライセンスでOSS公開を予定しています。SIWC DevKitの採用・ライセンス適合性とSIWCサービス利用許可は別に確認します。個人の非収益化案件の適切な申請窓口、企画段階での受付可否、必要なURL・資料をご案内ください。
 
 ## English product description draft
 
 Conversational Music Lab is a planned, individually operated, non-monetized hosted web app that helps beginners learn music. Users would compare rhythm patterns, edit note positions on a grid, and ask an AI why the patterns sound different. The initial concept uses browser-side audio playback and structured rhythm data plus text for AI dialogue.
 
-We would like to integrate actual Sign in with ChatGPT and, with each user's permission, use that user's own ChatGPT plan for AI requests. Our goals include separating credentials, login sessions, conversations, and rhythm patterns between users and verifying that separation in practice. The project is currently in private planning; implementation, real authentication, and inference tests have not started. The application scope is a hosted web app used by multiple independent users, each with their own ChatGPT account. A browser and local backend on a single macOS computer are planned solely for preliminary testing. The specific production hosting location is undecided. Eligibility and approval for this hosted offering have not been confirmed. We seek guidance on the applicable conditions, required approval, client registration, and whether the operator may store and refresh each user's credentials for this configuration.
+We would like to integrate actual Sign in with ChatGPT and, with each user's permission, use that user's own ChatGPT plan for AI requests. Our goals include separating credentials, login sessions, conversations, and rhythm patterns between users and verifying that separation in practice. The project is at the stage of publishing planning documents; implementation, real authentication, and inference tests have not started. The application scope is a hosted web app used by multiple independent users, each with their own ChatGPT account. A browser and local backend on a single macOS computer are planned solely for preliminary testing. The specific production hosting location is undecided. Eligibility and approval for this hosted offering have not been confirmed. We seek guidance on the applicable conditions, required approval, client registration, and whether the operator may store and refresh each user's credentials for this configuration.
 
-The independently authored portions use the MIT license and are intended for future open-source release. Any adoption of the SIWC DevKit and its separate license will be assessed separately from permission to use the SIWC service. Please advise on the appropriate application route for an individual, non-monetized project, whether a planning-stage proposal can be considered, and the required URL or supporting materials.
+We are at the stage of publishing planning documents, and intend to release future independently authored code as open source under the MIT license. Any adoption of the SIWC DevKit and its separate license will be assessed separately from permission to use the SIWC service. Please advise on the appropriate application route for an individual, non-monetized project, whether a planning-stage proposal can be considered, and the required URL or supporting materials.
 
 ## 承認側へ確認する質問
 
-1. 個人の非収益化・将来OSS公開の企画はこの窓口の対象か。対象外なら適切な公式窓口はどこか。会社名・業務用メール欄をどう記入すべきか。
+1. 個人の非収益化・企画文書の公開段階にあり将来コードもOSS公開する企画はこの窓口の対象か。対象外なら適切な公式窓口はどこか。会社名・業務用メール欄をどう記入すべきか。
 2. 企画段階で相談・申請できるか。Website URLに求める内容は何か。公開リポジトリ、デモ、完成アプリはどの段階で必要か。
 3. 申請対象のホスト型Webアプリで、独立した複数利用者がそれぞれ本人のChatGPTアカウントとプランを使う構成は対象か。必要な承認、登録方式、callback、user/workspace/client/hostの対応を確認したい。
 4. 共有構成で運営者が利用者ごとの資格情報を保管・更新できるか。必要な同意、アクセス分離、削除・失効条件は何か。
@@ -61,9 +61,9 @@ The independently authored portions use the MIT license and are intended for fut
 
 申請する提供形態の範囲は上記のホスト型Webアプリとして決定済み。送信前に残る確認・入力は以下のとおり。
 
-- ［本人判断：相談窓口と個人案件の受付方法の確認結果］
+- ［未確認：このInterest formで相談する個人案件の受付可否と記入方法］
 - ［本人判断：Website URL・添付資料の要件、公開してよい資料と公開時期］
 - ［本人記入：申請者情報は正式な送信先へ直接記入。本書へ実値を追記しない］
 - ［本人判断：日英説明の最終文面と送信時期］
 
-申請準備下書きの承認、フォーム送信、OpenAIによる利用承認、リポジトリ公開、実装開始はそれぞれ別の状態として記録する。今回完了するのは申請対象の確定と下書きの整備のみであり、フォーム入力・送信、公開、実装、設定変更は行わない。
+申請準備下書きの承認、フォーム送信、OpenAIによる利用承認、リポジトリ公開、実装開始はそれぞれ別の状態として記録する。企画文書の公開段階であり、フォーム入力・送信、SIWC承認取得、実装、実認証・実推論試験は未実施である。
