@@ -31,6 +31,7 @@
 - [企画書（ドラフト）](docs/plan.md)
 - [未決事項・確認事項](docs/open-questions.md)
 - [SIWC利用条件の調査記録](docs/siwc-research.md)
+- [SIWC利用申請の準備下書き（未送信）](docs/application-draft.md)
 - [実認証の試験環境・試験計画（macOS のローカル環境に選定済み）](docs/auth-test-plan.md)
 
 - [公開準備スナップショットの確認](docs/pre-publication-review.md)
