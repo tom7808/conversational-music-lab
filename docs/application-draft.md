@@ -1,7 +1,11 @@
-# SIWC利用申請の準備下書き
+# SIWC Interest formの送信・受付記録と準備時の説明案
 
 作成・公式窓口確認日：2026年10月10日  
-状態：企画文書の公開段階で、アプリは未実装。申請対象の提供形態と、このInterest formへ個人案件の受付可否を含めて相談する方針は本人承認済み。本文は送信前レビュー用の下書き。フォームへの入力・送信、クライアント登録、承認取得は未実施。
+状態：2026年10月10日 18:33 JST、リポジトリ設定画面でpublicを確認し、公式SIWC Interest formを送信した。画面の「お問い合わせを受け付けました」「製品が対象となる場合は、ご連絡いたします」で受付を確認した。これは利用承認ではない。アプリ実装、クライアント登録、実認証・実推論試験、ホスト型での利用承認取得は未実施。
+
+公開URL：[conversational-music-lab](https://github.com/tom7808/conversational-music-lab)
+
+個人の非収益化企画の受付可否と、ホスト型Webアプリで各利用者本人のChatGPTプランを使う条件を問い合わせた。以下の日英説明案・質問と実送信文面の完全一致は未確認であり、実送信文面の転載ではない。申請者の氏名・メール、Company name・Job titleの入力値、認証情報は本書に保存しない。メール返信の有無は本記録では確認していない。
 
 ## 申請の目的と現在の段階
 
@@ -13,24 +17,24 @@
 
 ## 公式窓口と表示項目
 
-[ChatGPTプラン利用の概要](https://developers.openai.com/siwc/token-sharing-open-source)は、遠隔ホスト型または有料のアプリについて[Interest form](https://openai.com/form/sign-in-with-chatgpt-interest/)を案内している。[client ID申請案内](https://developers.openai.com/siwc/request-client-id)とフォーム本文は選定された商用パートナー向けの案内であり、個人の非収益化案件の受付方法は未確認である。このInterest formに、個人の非収益化案件の受付可否を含めて相談する予定である。フォームへの入力・送信は未実施であり、受付可否も未確認である。
+[ChatGPTプラン利用の概要](https://developers.openai.com/siwc/token-sharing-open-source)は、遠隔ホスト型または有料のアプリについて[Interest form](https://openai.com/form/sign-in-with-chatgpt-interest/)を案内している。[client ID申請案内](https://developers.openai.com/siwc/request-client-id)とフォーム本文は選定された商用パートナー向けの案内であり、個人の非収益化案件の受付方法は未確認である。このInterest formへの送信と画面上の受付確認は完了したが、個人の非収益化企画が対象となるかは未確認である。
 
-以下は閲覧時の必須表示を整理したもの。送信時の検証規則や追加要求を保証しない。本人情報の実値は本書へ保存せず、正式な窓口と記入方法を確認後、本人が送信先へ直接記入する。
+以下は準備時に閲覧した表示項目の記録であり、送信内容や入力値の記録ではない。送信時の検証規則や追加要求を保証しない。本人情報の実値を本書へ保存しない方針は維持する。
 
-| 表示項目 | 必須表示 | 下書き・対応 |
-|---|---|---|
-| Work email | あり | ［本人記入：連絡先メール。個人案件での記入方法を確認］ |
-| First name | あり | ［本人記入：名］ |
-| Last name | あり | ［本人記入：姓］ |
-| Company name | あり | ［本人記入：個人案件で認められる記入方法を確認］ |
-| Website URL | あり | ［本人判断：受理されるURLの種類と公開範囲を確認］ |
-| Job title | なし | ［本人判断：任意記入］ |
-| 希望機能 | あり | サインイン＋ChatGPTプランによるAIリクエストを希望 |
-| 対象製品の簡潔な説明 | あり | 下記の日英説明をレビューして使用 |
+| 表示項目 | 必須表示 |
+|---|---|
+| Work email | あり |
+| First name | あり |
+| Last name | あり |
+| Company name | あり |
+| Website URL | あり |
+| Job title | なし |
+| 希望機能 | あり |
+| 対象製品の簡潔な説明 | あり |
 
-表示本文からは、完成アプリ、デモ、公開GitHubリポジトリが必須かは確認できない。不要とも判断しない。企画文書の公開段階であることとアプリ未実装を明記し、URLの要件と企画段階の受付可否をこのフォームで相談する。会社・業務用メールを架空の情報で補わない。[公式フォーム](https://openai.com/form/sign-in-with-chatgpt-interest/)
+表示本文からは、完成アプリ、デモ、公開GitHubリポジトリが必須かは確認できない。不要とも判断しない。必要資料の条件は未確認である。[公式フォーム](https://openai.com/form/sign-in-with-chatgpt-interest/)
 
-## 製品説明の日本語下書き
+## 準備時の日本語説明案（実送信文面の転載ではない）
 
 会話で音楽を学ぶ実験室は、初心者がブラウザでリズムを聴き比べ、グリッド上で音の位置を編集し、AIに「なぜ違って聴こえるか」を質問する、個人運営の非収益化ホスト型Webアプリの企画です。音の再生はブラウザ側で行い、AIとの対話にはリズムの構造化データとテキストを使う初期案を検討しています。
 
@@ -38,7 +42,7 @@
 
 企画文書を公開する段階であり、将来実装する自作コードはMITライセンスでOSS公開を予定しています。SIWC DevKitの採用・ライセンス適合性とSIWCサービス利用許可は別に確認します。個人の非収益化案件の適切な申請窓口、企画段階での受付可否、必要なURL・資料をご案内ください。
 
-## English product description draft
+## English preparation draft (not a copy of the submitted text)
 
 Conversational Music Lab is a planned, individually operated, non-monetized hosted web app that helps beginners learn music. Users would compare rhythm patterns, edit note positions on a grid, and ask an AI why the patterns sound different. The initial concept uses browser-side audio playback and structured rhythm data plus text for AI dialogue.
 
@@ -46,7 +50,7 @@ We would like to integrate actual Sign in with ChatGPT and, with each user's per
 
 We are at the stage of publishing planning documents, and intend to release future independently authored code as open source under the MIT license. Any adoption of the SIWC DevKit and its separate license will be assessed separately from permission to use the SIWC service. Please advise on the appropriate application route for an individual, non-monetized project, whether a planning-stage proposal can be considered, and the required URL or supporting materials.
 
-## 承認側へ確認する質問
+## 準備時の確認質問案（実送信内容の列挙ではない）
 
 1. 個人の非収益化・企画文書の公開段階にあり将来コードもOSS公開する企画はこの窓口の対象か。対象外なら適切な公式窓口はどこか。会社名・業務用メール欄をどう記入すべきか。
 2. 企画段階で相談・申請できるか。Website URLに求める内容は何か。公開リポジトリ、デモ、完成アプリはどの段階で必要か。
@@ -57,13 +61,8 @@ We are at the stage of publishing planning documents, and intend to release futu
 
 質問3・4は共有構成の条件確認であり、ローカル試験や同一利用者の自己所有VMの説明から共有サービスの許可を推定しない。技術的な背景は[調査記録](siwc-research.md)、試験の範囲は[認証試験計画](auth-test-plan.md)を参照する。
 
-## 本人の判断・記入欄
+## 送信後に残る確認
 
-申請する提供形態の範囲は上記のホスト型Webアプリとして決定済み。送信前に残る確認・入力は以下のとおり。
+フォーム送信と画面上の受付確認は完了したため、本人情報の入力や送信時期を送信前のTodoとして扱わない。個人の非収益化企画の対象可否、ホスト型で各利用者のChatGPTプランを使う条件、必要資料・登録・承認は引き続き未確認である。
 
-- ［未確認：このInterest formで相談する個人案件の受付可否と記入方法］
-- ［本人判断：Website URL・添付資料の要件、公開してよい資料と公開時期］
-- ［本人記入：申請者情報は正式な送信先へ直接記入。本書へ実値を追記しない］
-- ［本人判断：日英説明の最終文面と送信時期］
-
-申請準備下書きの承認、フォーム送信、OpenAIによる利用承認、リポジトリ公開、実装開始はそれぞれ別の状態として記録する。企画文書の公開段階であり、フォーム入力・送信、SIWC承認取得、実装、実認証・実推論試験は未実施である。
+リポジトリのpublic確認、フォーム送信・受付確認、OpenAIによる利用承認、実装開始はそれぞれ別の状態として記録する。企画文書は公開段階にあり、アプリ実装、クライアント登録、実認証・実推論試験、ホスト型での利用承認取得は未実施である。
